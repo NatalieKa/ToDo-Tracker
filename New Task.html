@@ -32,6 +32,7 @@
 
 
   <body>
+    <!-- "Page Header" green Jumbotron -->
     <div style="background:lightgreen" class="jumbotron">
       <div class="container">
         <blockquote class="blockquote-reverse">
@@ -48,6 +49,7 @@
     </div>
 
       <div class="container">
+        <!-- Menubar -->
         <ul class="nav nav-tabs">
           <li><a href="ToDo-Tracker.html">Home</a></li>
           <li class="active"><a href="New Task.html">Add new Task</a></li>
@@ -58,6 +60,7 @@
 		<div class="row">
     	  <div class="col-sm-6"><h4>ToDo:</h4>
 		  	 <div class="form-group">
+          <!-- textfield for naming the new task -->
 			  <label class="sr-only" for="newTask">ToDo:</label>
   			   <textarea class="form-control" rows="2" id="newTask" maxlength="160"></textarea>
 			 </div>
@@ -65,16 +68,19 @@
     <div class="col-sm-3"><h4>Progress<p><small>in Percent</small></p></h4>
   <div class="form-group">
     <label class="sr-only" for="progress">Progress</label>
+    <!-- field for adding a progress -->
   <input type="number" name="progress" min="0" max="100">
   </div>
   </div>
     <div class="col-sm-3"><h4>Deadline</h4></div>
 	<div class="form-group">
+    <!-- field for adding a deadline -->
     <label class="sr-only" for="deadline">Deadline:</label>
   <input type="date" name="deadline"></div>
   
   
   </div>
+  <!-- button for saving the task -->
   <button type="submit" class="btn btn-default">Submit</button>
  </form>
  </div>
